@@ -1,5 +1,5 @@
 /* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 /*Asterisk wildcard selector to override default styles added by the brower*/
 
@@ -26,9 +26,9 @@ body{
 /*Header*/
 header{
     background-color: #ffffff;
-    padding-left: 0 1rem ;
+    padding: 0 1rem ;
     position: fixed;
-    z-index: index 99;
+    z-index: 99;
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
 
@@ -45,7 +45,7 @@ h1{font-family: 'Oswald',sans-serif ;
     color: #252525; ;
 }
 
-menu{
+#menu{
     font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
@@ -54,7 +54,7 @@ menu{
     margin-bottom: 1em;
 }
 .active{
-    border-bottom: #3a3a3a;
+    border-bottom: 1px solid #3a3a3a;
 }    
 /*Navbar Styles with dropdown toggle*/
 nav{
@@ -64,10 +64,26 @@ nav{
     left: 0;
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    top:100%;
+}
+/*Nav toggle */
+#nav-toggle:checked~nav{
+    display: block;
+}
+
+#nav-toggle{
+    display: none;
+}
+.nav-toggle-label{
+    font-size: 2rem;
 }
 /*Main content */
 main{ background-color: lightblue;
     flex: 1 0 auto ;
+    margin-top: 47px;
 
 }
 
